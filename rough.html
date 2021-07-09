@@ -1,0 +1,20 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head>  
+	</head> 
+	<body>
+		<script> 
+			var f=()=>{ 
+				var a = document.createElement('a'); 
+				var link = document.createTextNode("Proceed"); 
+				a.appendChild(link);
+				a.title = "Your Video"; 
+				a.href =prompt("enter url");
+				document.body.appendChild(a); 
+			} 
+        </script> 
+        <button onclick = "f()"> 
+			Enter Your URL
+		</button> 
+	</body> 
+</html>					 

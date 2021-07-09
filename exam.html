@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>LOGIN</title>
+        <style>
+            input {
+            outline: 0;
+            border-width: 0 0 2px;
+            border-color: blue
+            }
+            input:focus {
+                box-shadow:0 0 0 10px red;
+            }
+        </style>
+        <script>
+            function f()
+            {
+                var x=document.getElementById('email').value;
+                var y=document.getElementById('pwd').value;
+                document.write(x);
+                if(x.length==0 && y.length==0)
+                alert('email&password is compulsory');
+                else if(x.length==0)
+                alert('email is required');
+                else if(y.length==0)
+                alert('password is required');
+                else
+                alert('Login successful');
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <b>LOGIN</b>
+            <form autocomplete="off">
+                <label>Email</label>
+                <input type="email" id="email">
+                <br>
+                <label>Password</label>
+                <input type="password" id="pwd" >
+                <br>
+                <button onclick="f()" >Login</button>
+            </form>
+        </center>
+    </body>
+</html>
